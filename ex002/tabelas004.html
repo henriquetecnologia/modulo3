@@ -6,8 +6,15 @@
     <title>Tabela por Sexo</title>
 
     <style>
+
+        :root {
+            --cor0: rgb(14, 71, 14);
+
+        }
+
         body {
             font-family: Arial, Helvetica, sans-serif;
+            
         }
 
         table {
@@ -25,6 +32,7 @@
             width: 150px;
             border: 1px solid black;
             text-align: center;
+            height: 50px;           
 
         }
 
@@ -40,76 +48,77 @@
             background-color: lightgray;
         }
 
+        .tabela {
+            overflow: auto;
+        }
+               
+
     </style>
 </head>
 <body>
-    <table>
-    
-        <caption>
-        Grupo de Filmes Prediletos por Sexo
-        </caption>
+    <div class="tabela">
+        <table>          
+            <caption>
+            Grupo de Filmes Prediletos por Sexo
+            </caption>
+            <thead>
+                <tr>
+                    <th class="superior" scope="col">Grupo</th>
+                    <th class="superior" scope="col">Nomes</th>
+                    <th class="superior" colspan="3" scope="colgroup">Filmes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="3" class="lateral" scope="rowgroup">Mulheres</th>
+                    <td>Ana Maria Santos</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td>Vingadores</td>
+                </tr>
+                <tr>
+                    <td>Beatriz Souza</td>
+                    <td>Hulk</td>
+                    <td>Inception</td>
+                    <td>Batman</td>
+                </tr>
+                <tr>
+                    <td>Cláudia Melo</td>
+                    <td>Oblivion</td>
+                    <td>Matrix</td>
+                    <td>Big Hero</td>
+                </tr>
+                <tr>
+                    <th rowspan="3" class="lateral" scope="rowgroup">Homens</th>
+                    <td>Bruno Mendonça</td>
+                    <td>Intocáveis</td>
+                    <td>Amnésia</td>
+                    <td>Gladiador</td>
+                </tr>
+        
+                <tr>
+                    <td>Daniel Lourenço</td>
+                    <td>Wall-E</td>
+                    <td>Oldboy</td>
+                    <td>Dangal</td>
+                </tr>
+                <tr>
+                    <td>Fabiano Mota</td>
+                    <td>Star Wars 5</td>
+                    <td>Taxi Driver</td>
+                    <td>Toy Story</td>
+                </tr>
+        
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4" id="inferior" scope="row">Total</th>
+                    <td>1000</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 
-        <thead>
-            <tr>
-                <th class="superior" scope="col">Grupo</th>
-                <th class="superior" scope="col">Nomes</th>
-                <th class="superior" colspan="3" scope="colgroup">Filmes</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <th rowspan="3" class="lateral" scope="rowgroup">Mulheres</th>
-                <td>Ana Maria Santos</td>
-                <td>Alien</td>
-                <td>Rambo</td>
-                <td>Vingadores</td>
-            </tr>
-
-            <tr>
-                <td>Beatriz Souza</td>
-                <td>Hulk</td>
-                <td>Inception</td>
-                <td>Batman</td>
-            </tr>
-
-            <tr>
-                <td>Cláudia Melo</td>
-                <td>Oblivion</td>
-                <td>Matrix</td>
-                <td>Big Hero</td>
-            </tr>
-
-            <tr>
-                <th rowspan="3" class="lateral" scope="rowgroup">Homens</th>
-                <td>Bruno Mendonça</td>
-                <td>Intocáveis</td>
-                <td>Amnésia</td>
-                <td>Gladiador</td>
-            </tr>
-            
-            <tr>
-                <td>Daniel Lourenço</td>
-                <td>Wall-E</td>
-                <td>Oldboy</td>
-                <td>Dangal</td>
-            </tr>
-
-            <tr>
-                <td>Fabiano Mota</td>
-                <td>Star Wars 5</td>
-                <td>Taxi Driver</td>
-                <td>Toy Story</td>
-            </tr>
-           
-        </tbody>
-
-        <tfoot>
-            <tr>
-                <th colspan="4" id="inferior" scope="row">Total</th>
-                <td>1000</td>
-            </tr>
-        </tfoot>
-    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam nobis deleniti laboriosam earum pariatur facilis quod iste tempore accusamus, ratione ea quidem suscipit dolore tempora doloribus tenetur nesciunt. Excepturi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque tempore ab pariatur dolores esse! Vel iste harum, qui ducimus rerum eius placeat ad eligendi impedit, dolores minus dolore, sint blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sint sunt maxime velit reprehenderit cum, rerum assumenda placeat? Dolorem animi perferendis modi perspiciatis officiis culpa natus est tempora fugit facere. lorem</p>    
 </body>
 </html>
